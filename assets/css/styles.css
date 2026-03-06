@@ -41,9 +41,11 @@ header{
 }
 
 .navbar{
-  display:flex; align-items:center; justify-content:flex-start;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
   padding:14px 0;
-  gap:14px;
+  gap:36px;
 }
 .brand{
   display:flex; align-items:center; gap:10px;
