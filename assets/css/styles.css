@@ -201,3 +201,7 @@ nav a[aria-current="page"]{
   .navbar{flex-wrap:wrap}
   .nav-toggle{display:inline-block}
 }
+.logo{
+  height:60px;
+  width:60px;
+}
