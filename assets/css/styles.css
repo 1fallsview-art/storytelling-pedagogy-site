@@ -6,7 +6,7 @@
   --line:rgba(231,238,247,.12);
   --accent:#7dd3fc;
   --accent2:#a7f3d0;
-  --max:1100px;
+  --max:1280px;
   --radius:18px;
 }
 
@@ -68,9 +68,9 @@ header{
 nav ul{
   list-style:none;
   display:flex;
-  gap:14px;
+  gap:8px;
   margin:0; padding:0;
-  flex-wrap:wrap;
+  flex-wrap:nowrap;
   justify-content:flex-end;
 }
 nav a{
