@@ -364,3 +364,7 @@ nav a[aria-current="page"]{
     max-width:420px;
   }
 }
+.principle {
+    color: #a0522d; /* A sienna/earth tone */
+    font-weight: bold;
+}
