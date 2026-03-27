@@ -364,7 +364,8 @@ nav a[aria-current="page"]{
     max-width:420px;
   }
 }
+
 .principle {
-    color: #2f6f5e;
-    font-weight: bold;
+    color: var(--accent2);
+    font-weight: 600;
 }
