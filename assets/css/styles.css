@@ -365,7 +365,6 @@ nav a[aria-current="page"]{
   }
 }
 .principle {
-    color: var(--accent); /* This is that shiny light blue (#7dd3fc) from your logo */
+    color: #2f6f5e;
     font-weight: bold;
-    text-shadow: 0 0 8px rgba(125, 211, 252, 0.3); /* Adds a subtle "shiny" glow */
 }
