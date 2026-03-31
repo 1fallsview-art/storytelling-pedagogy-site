@@ -168,34 +168,36 @@ nav a[aria-current="page"]{
   margin:0 0 14px;
 }
 
-/* HERO IMAGE — FIXED VERSION */
+/* HERO IMAGE — FINAL FIX */
 
 .hero-img{
   position: relative;
-  display:flex;
-  align-items:flex-start;
-  justify-content:center;
-  overflow: hidden;          /* 防止溢出 */
-  border-radius:12px;        /* 保持圆角裁切 */
+
+  width: 100%;
+  max-width: var(--hero-image-width); /* 关键：容器=图片宽度 */
+
+  justify-self: center;
+
+  overflow: hidden;
+  border-radius:12px;
 }
 
 .hero-img img{
   width:100%;
-  max-width:var(--hero-image-width);
+  display:block;
   border-radius:12px;
   border:1px solid var(--line);
   opacity:.92;
 }
 
-/* FLOATING CAPTION — FIXED */
+/* FLOATING CAPTION — FINAL */
 
 .hero-img .img-caption{
   position: absolute;
   right: 12px;
   bottom: 12px;
 
-  max-width: calc(100% - 24px);  /* 不会超出图片 */
-  width: fit-content;
+  max-width: calc(100% - 24px);
 
   background: rgba(0, 0, 0, 0.65);
   color: #fff;
@@ -360,7 +362,7 @@ nav a[aria-current="page"]{
     height:48px;
   }
 
-  .hero-img img{
+  .hero-img{
     max-width:420px;
   }
 
