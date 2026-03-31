@@ -9,15 +9,12 @@
   --max:1280px;
   --radius:18px;
 
-  /* layout control */
   --hero-gap:12px;
   --section-gap:14px;
   --hero-image-width:480px;
 }
 
-*{
-  box-sizing:border-box;
-}
+*{ box-sizing:border-box; }
 
 html,body{
   margin:0;
@@ -171,13 +168,15 @@ nav a[aria-current="page"]{
   margin:0 0 14px;
 }
 
-/* HERO IMAGE (UPDATED) */
+/* HERO IMAGE — FIXED VERSION */
 
 .hero-img{
   position: relative;
   display:flex;
   align-items:flex-start;
   justify-content:center;
+  overflow: hidden;          /* 防止溢出 */
+  border-radius:12px;        /* 保持圆角裁切 */
 }
 
 .hero-img img{
@@ -188,14 +187,15 @@ nav a[aria-current="page"]{
   opacity:.92;
 }
 
-/* FLOATING CAPTION */
+/* FLOATING CAPTION — FIXED */
 
 .hero-img .img-caption{
   position: absolute;
-  bottom: 16px;
-  right: 16px;
+  right: 12px;
+  bottom: 12px;
 
-  max-width: 70%;
+  max-width: calc(100% - 24px);  /* 不会超出图片 */
+  width: fit-content;
 
   background: rgba(0, 0, 0, 0.65);
   color: #fff;
@@ -364,12 +364,10 @@ nav a[aria-current="page"]{
     max-width:420px;
   }
 
-  /* UPDATED MOBILE CAPTION */
-
   .hero-img .img-caption{
-    max-width:85%;
-    bottom:12px;
-    right:12px;
+    right:10px;
+    bottom:10px;
+    max-width: calc(100% - 20px);
     font-size:0.8rem;
   }
 }
