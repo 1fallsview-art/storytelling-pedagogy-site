@@ -383,17 +383,19 @@ nav a[aria-current="page"]{
 }
 
 .activity-image {
-  width: 100%;
-  max-width: 520px;
+  width: 370px;
+  max-width: 100%;
   height: auto;
   display: block;
   border-radius: 16px;
 }
 
+/* keep book covers slightly smaller if you still want that */
 .activity-image-small {
-  max-width: 220px;
+  width: 260px;
 }
 
+/* keep stacked layout for the two book covers */
 .activity-images-stack {
   display: flex;
   flex-direction: column;
@@ -401,19 +403,9 @@ nav a[aria-current="page"]{
   gap: 1rem;
 }
 
-.img-caption {
-  margin-top: 0.75rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  opacity: 0.9;
-}
-
-@media (max-width: 800px) {
-  .activity-images-stack {
-    align-items: flex-start;
-  }
-
-  .activity-image-small {
-    max-width: 180px;
-  }
+/* optional: center images in right column */
+.hero-grid > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
