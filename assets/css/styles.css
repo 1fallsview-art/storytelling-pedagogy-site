@@ -390,11 +390,6 @@ nav a[aria-current="page"]{
   border-radius: 16px;
 }
 
-/* keep book covers slightly smaller if you still want that */
-.activity-image-small {
-  width: 260px;
-}
-
 /* keep stacked layout for the two book covers */
 .activity-images-stack {
   display: flex;
