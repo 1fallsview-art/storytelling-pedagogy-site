@@ -309,12 +309,6 @@ nav a[aria-current="page"]{
   align-items:center;
 }
 
-.book-item img{
-  width:260px;
-  max-width:100%;
-  margin:0 auto;
-}
-
 .book-item .img-caption{
   position:static;
   max-width:260px;
@@ -337,8 +331,19 @@ nav a[aria-current="page"]{
   height:auto;
 }
 
+.activities-page .book-item{
+  width:260px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
 .activities-page .book-item img{
   width:260px;
+  height:340px;
+  object-fit:cover;
+  display:block;
+  border-radius:12px;
 }
 
 /* MOBILE */
@@ -353,11 +358,8 @@ nav a[aria-current="page"]{
   .book-grid{
     grid-template-columns:1fr;
   }
-}
-/* Make book covers same height */
-.activities-page .book-item img{
-  width: 260px;
-  height: 340px;
-  object-fit: cover;
-  border-radius: 12px;
+
+  .activities-page .book-item{
+    width:100%;
+  }
 }
