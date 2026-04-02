@@ -436,3 +436,25 @@ nav a[aria-current="page"]{
     grid-template-columns:1fr;
   }
 }
+/* ============================= */
+/* ACTIVITIES PAGE IMAGE CONTROL */
+/* ============================= */
+
+/* All regular images on Activities page */
+.activities-page .activity-image{
+  width: 360px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent hero-img from overriding width */
+.activities-page .hero-img img{
+  width: auto;
+  max-width: 100%;
+}
+
+/* Book covers stay smaller */
+.activities-page .book-item img{
+  width: 260px;
+  max-width: 100%;
+}
