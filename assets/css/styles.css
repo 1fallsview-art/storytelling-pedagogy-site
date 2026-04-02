@@ -404,3 +404,31 @@ nav a[aria-current="page"]{
   flex-direction: column;
   align-items: center;
 }
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.book-item {
+  text-align: center;
+}
+
+.book-item img {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+  display: block;
+}
+
+.book-item .img-caption {
+  margin-top: 0.5rem;
+}
+
+/* mobile friendly */
+@media (max-width: 700px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+}
