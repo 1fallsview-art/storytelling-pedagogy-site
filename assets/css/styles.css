@@ -330,19 +330,12 @@ nav a[aria-current="page"]{
   max-width:100%;
   height:auto;
 }
-
-.activities-page .book-item{
-  width:260px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-}
-
-.activities-page .book-item{
-  width:260px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+.activities-page .book-item img{
+  height: 260px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
 }
 
 .activities-page .book-item img{
