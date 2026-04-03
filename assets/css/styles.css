@@ -322,10 +322,12 @@ nav a[aria-current="page"]{
 /* ============================= */
 /* ACTIVITIES PAGE IMAGE CONTROL */
 /* ============================= */
+.activities-page .hero-img{
+  width:360px;
+}
 
 .activities-page .hero-img img.activity-image{
   width:100%;
-  max-width:100%;
   height:auto;
 }
 
