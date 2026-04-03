@@ -169,10 +169,9 @@ nav a[aria-current="page"]{
 }
 
 /* HERO IMAGE */
-
 .hero-img{
   position:relative;
-  width:fit-content;
+  width:var(--hero-image-width);
   max-width:100%;
   justify-self:center;
   overflow:visible;
@@ -180,14 +179,13 @@ nav a[aria-current="page"]{
 }
 
 .hero-img img{
-  width:auto;
-  max-width:100%;
+  width:100%;
+  height:auto;
   display:block;
   border-radius:12px;
   border:1px solid var(--line);
   opacity:.92;
 }
-
 /* FLOATING CAPTION */
 
 .hero-img .img-caption{
@@ -326,7 +324,7 @@ nav a[aria-current="page"]{
 /* ============================= */
 
 .activities-page .hero-img img.activity-image{
-  width:360px;
+  width:100%;
   max-width:100%;
   height:auto;
 }
